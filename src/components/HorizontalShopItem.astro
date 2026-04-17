@@ -13,6 +13,8 @@ const {
   custom_link_label = "",
 } = Astro.props;
 import { Image } from "astro:assets";
+import { resolveAssetPath } from "../lib/resolveAssetPath";
+const imageSrc = resolveAssetPath(img, Astro.base);
 ---
 
 <div class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]">
@@ -24,7 +26,7 @@ import { Image } from "astro:assets";
             width={750}
             height={422}
             format="webp"
-            src={img}
+            src={imageSrc}
             alt={title}
             class="max-w-full md:max-w-[13rem] rounded-lg"
           />
