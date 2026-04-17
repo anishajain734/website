@@ -2,7 +2,7 @@
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 import '../styles/global.css';
-import { resolveAssetPath, resolveOgImageUrl } from '../lib/resolveAssetPath';
+import { resolveOgImageUrl } from '../lib/resolveAssetPath';
 
 export interface Props {
 	title: string;
@@ -12,7 +12,7 @@ export interface Props {
 }
 
 const { title, description, image = '/social_img.webp', ogType = 'website' } = Astro.props;
-const base = Astro.base === '/' ? '' : Astro.base;
+const base = '/website';
 const ogImage = resolveOgImageUrl(image, Astro.site);
 ---
 

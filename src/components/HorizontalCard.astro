@@ -1,8 +1,6 @@
 ---
 const { title, img, desc, url, badge, tags, target = "_blank" } = Astro.props;
 import { Image } from "astro:assets";
-import { resolveAssetPath } from "../lib/resolveAssetPath";
-const imageSrc = resolveAssetPath(img, Astro.base);
 const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
 ---
 
@@ -14,7 +12,7 @@ const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
       {
         img && (
           <Image
-            src={imageSrc}
+            src={img}
             width={750}
             height={422}
             format="webp"
