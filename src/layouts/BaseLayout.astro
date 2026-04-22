@@ -37,5 +37,28 @@ const {
       </div>
       {includeSidebar && <SideBar sideBarActiveItemID={sideBarActiveItemID} />}
     </div>
+
+    <script>
+      function scrollToHash() {
+        if (window.location.hash) {
+          const id = window.location.hash.substring(1);
+          const element = document.getElementById(id);
+          if (element) {
+            setTimeout(() => {
+              element.scrollIntoView({ behavior: 'smooth' });
+            }, 100);
+          }
+        }
+      }
+
+      // Scroll on initial page load
+      document.addEventListener('DOMContentLoaded', scrollToHash);
+
+      // Handle hash changes
+      window.addEventListener('hashchange', scrollToHash);
+
+      // Also call it immediately in case the page is already loaded
+      scrollToHash();
+    </script>
   </body>
 </html>
