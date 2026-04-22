@@ -25,70 +25,80 @@ const last_posts = posts.slice(0, 3);
   </div>
 
   <div class="mt-12">
+    <div class="text-3xl w-full font-bold mb-6">Education</div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
+      <div class="p-4 rounded-lg bg-base-100 hover:shadow-lg transition ease-in-out">
+        <h3 class="text-lg font-bold text-primary">Certificate in Data Analytics</h3>
+        <p class="text-sm font-semibold">University of Washington</p>
+      </div>
+
+      <div class="p-4 rounded-lg bg-base-100 hover:shadow-lg transition ease-in-out">
+        <h3 class="text-lg font-bold text-primary">Microsoft Power BI (PL-300) Certified</h3>
+      </div>
+
+      <div class="p-4 rounded-lg bg-base-100 hover:shadow-lg transition ease-in-out">
+        <h3 class="text-lg font-bold text-primary">PhD in General Management</h3>
+        <p class="text-sm font-semibold">IIS University, India</p>
+      </div>
+
+      <div class="p-4 rounded-lg bg-base-100 hover:shadow-lg transition ease-in-out">
+        <h3 class="text-lg font-bold text-primary">MBA in International Business</h3>
+        <p class="text-sm font-semibold">IIS University, India</p>
+      </div>
+
+      <div class="p-4 rounded-lg bg-base-100 hover:shadow-lg transition ease-in-out">
+        <h3 class="text-lg font-bold text-primary">Bachelor of Commerce</h3>
+        <p class="text-sm font-semibold">Accounting & Taxation</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-12">
     <div class="text-3xl w-full font-bold mb-6">Professional Experience</div>
-    
-    <!-- Financial Consultant - ICICI Prudential -->
-    <div class="mb-6 p-4 rounded-lg bg-base-100 hover:shadow-lg transition ease-in-out">
-      <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-        <div>
-          <h3 class="text-xl font-bold text-primary">Financial Consultant (BI)</h3>
-          <p class="text-lg font-semibold">ICICI Prudential Ltd.</p>
-        </div>
-        <span class="badge badge-neutral">09/2024 – 10/2024</span>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
+      <!-- Financial Consultant - ICICI Prudential -->
+      <div class="p-4 rounded-lg bg-base-100 hover:shadow-lg transition ease-in-out">
+        <h3 class="text-lg font-bold text-primary">Financial Consultant (BI)</h3>
+        <p class="text-sm font-semibold mb-3">ICICI Prudential Ltd.</p>
+        <ul class="list-disc list-inside space-y-1 text-sm">
+          <li><span class="text-green-600 font-semibold">20+ client accounts</span> financial tracking</li>
+          <li><span class="text-green-600 font-semibold">3% accuracy</span> in projections</li>
+          <li><span class="text-green-600 font-semibold">~800% efficiency</span> gain via automation</li>
+        </ul>
       </div>
-      <ul class="list-disc list-inside space-y-2 text-base">
-        <li>Built Power BI dashboards tracking financial performance of 20+ client accounts (worth $XM) with quarterly reporting across index funds, mutual funds, and fixed deposits</li>
-        <li>Calculated projected growth scenarios using Advanced Excel analysis, achieving 3% accuracy delta within projected range</li>
-        <li>Improved operational efficiency by ~800% through SQL-automated dashboards (6-7 hours → 1 hour)</li>
-      </ul>
-    </div>
 
-    <!-- Assistant Professor -->
-    <div class="mb-6 p-4 rounded-lg bg-base-100 hover:shadow-lg transition ease-in-out">
-      <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-        <div>
-          <h3 class="text-xl font-bold text-primary">Assistant Professor</h3>
-          <p class="text-lg font-semibold">St. Wilfred PG College</p>
-        </div>
-        <span class="badge badge-neutral">12/2023 - 02/2024</span>
+      <!-- Assistant Professor -->
+      <div class="p-4 rounded-lg bg-base-100 hover:shadow-lg transition ease-in-out">
+        <h3 class="text-lg font-bold text-primary">Assistant Professor</h3>
+        <p class="text-sm font-semibold mb-3">St. Wilfred PG College</p>
+        <ul class="list-disc list-inside space-y-1 text-sm">
+          <li>NAAC accreditation - achieved <span class="text-green-600 font-semibold">A grade</span></li>
+          <li><span class="text-green-600 font-semibold">11% improvement</span> in course grades</li>
+          <li>KPI framework for student performance</li>
+        </ul>
       </div>
-      <ul class="list-disc list-inside space-y-2 text-base">
-        <li>Led data analysis for college student grades across disciplines for NAAC accreditation (achieved A grade)</li>
-        <li>Developed Excel dashboard for performance trends and growth opportunities across courses</li>
-        <li>Achieved 11% improvement in average accounting course grade through KPI metrics framework</li>
-      </ul>
-    </div>
 
-    <!-- Customer Data Analyst - Kurki Heritage -->
-    <div class="mb-6 p-4 rounded-lg bg-base-100 hover:shadow-lg transition ease-in-out">
-      <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-        <div>
-          <h3 class="text-xl font-bold text-primary">Customer Data Analyst</h3>
-          <p class="text-lg font-semibold">Kurki Heritage (Hotel & Hospitality)</p>
-        </div>
-        <span class="badge badge-neutral">08/2022 – 09/2023</span>
+      <!-- Customer Data Analyst -->
+      <div class="p-4 rounded-lg bg-base-100 hover:shadow-lg transition ease-in-out">
+        <h3 class="text-lg font-bold text-primary">Customer Data Analyst</h3>
+        <p class="text-sm font-semibold mb-3">Kurki Heritage (Hotel & Hospitality)</p>
+        <ul class="list-disc list-inside space-y-1 text-sm">
+          <li><span class="text-green-600 font-semibold">34% YoY revenue</span> growth</li>
+          <li><span class="text-green-600 font-semibold">28% occupancy</span> improvement</li>
+          <li>Dynamic pricing strategies via Power BI</li>
+        </ul>
       </div>
-      <ul class="list-disc list-inside space-y-2 text-base">
-        <li>Built Power BI dashboards analyzing hotel booking revenue seasonality to establish dynamic pricing</li>
-        <li>Analyzed competitor pricing strategies using SQL and Excel for weekly price adjustments</li>
-        <li>Achieved 34% YoY revenue growth and 28% occupancy rate improvement through data-driven pricing</li>
-      </ul>
-    </div>
 
-    <!-- Data Analyst - Vedantu -->
-    <div class="mb-6 p-4 rounded-lg bg-base-100 hover:shadow-lg transition ease-in-out">
-      <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-        <div>
-          <h3 class="text-xl font-bold text-primary">Data Analyst (Sales & Operations)</h3>
-          <p class="text-lg font-semibold">Vedantu (EdTech)</p>
-        </div>
-        <span class="badge badge-neutral">06/2021 – 08/2021</span>
+      <!-- Data Analyst -->
+      <div class="p-4 rounded-lg bg-base-100 hover:shadow-lg transition ease-in-out">
+        <h3 class="text-lg font-bold text-primary">Data Analyst (Sales & Operations)</h3>
+        <p class="text-sm font-semibold mb-3">Vedantu (EdTech)</p>
+        <ul class="list-disc list-inside space-y-1 text-sm">
+          <li>Revenue tracking & sales forecasting</li>
+          <li><span class="text-green-600 font-semibold">2x efficiency</span> through automation</li>
+          <li>Multi-region report distribution</li>
+        </ul>
       </div>
-      <ul class="list-disc list-inside space-y-2 text-base">
-        <li>Built Excel dashboards tracking revenue growth and sales forecasting by geography and quarters</li>
-        <li>Automated weekly sales report generation and distribution across regions</li>
-        <li>Improved operational efficiency by 2x through automation</li>
-      </ul>
     </div>
   </div>
 
